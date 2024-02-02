@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(rasimlar/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.asosiy{
+    background-color: white;
+    width: 450px;
+    height: 450px;
+    margin:50px auto;
+    border-radius: 20px;
+    padding: 55px 75px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 0, 0, 0.795);
+}
+.linklar{
+    display: flex;
+    justify-content:space-evenly ;
+    margin-bottom: 30px;
+    
+}
+.linklar a{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.26);
+    text-decoration: none;
+    color: white;
+    
+}
+.linklar a img{
+    width: 20px;
+    margin-right: 15px;
+}
+#fb{
+    background-color: #3b5998;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+#gg{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.linklar a:hover{
+    background: rgb(8,71,140);
+    background: linear-gradient(45deg, rgba(8,71,140,1) 25%, rgba(219,13,173,1) 72%); 
+    transition: 0.5s;
+}
+#gg :hover{
+    color: white;
+    transition: 0.5s;
+}
+.from_input{
+    margin-bottom: 20px;
+}
+.from_input label{
+    font-size: 20px;
+    color: #525252;
+}
+.from_input input{
+    height: 45px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+#signin{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#signin a:hover{
+    background: rgb(8,71,140);
+    background: linear-gradient(45deg, rgba(8,71,140,1) 25%, rgba(219,13,173,1) 72%); 
+    transition: 0.5s;
+    cursor: pointer;   
+}
+#nimadir{
+    display: flex;
+    justify-content: center;
+}
+#nimadir span{
+    font-size: 14px;
+    color: #514747;
+}
+#nimadir a{
+    color: #201f1f;
+}
+@media screen and (max-width: 600px) {
+    .asosiy {
+        width: 95%;
+        height: 95%;
+        padding: 50px 30px;
+    }
+
+    .linklar {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .linklar a {
+        margin-bottom: 10px;
+    }
+
+    .form-input {
+        margin-bottom: 20px;
+    }
+
+    #nimadir {
+        flex-direction: column;
+    }
+}
